@@ -69,7 +69,8 @@ run_worker_first = ["/api/*", "/identity/*"]
 # Attachment configuration (optional)
 # Maximum size for individual attachment files in bytes.
 # Defaults to no limit if not set.
-# ATTACHMENT_MAX_BYTES = "104857600"  # 100MB
+# ATTACHMENT_MAX_BYTES = "104857600"  # 100MiB
+ATTACHMENT_MAX_BYTES = "25165824"  #24MiB
 
 # Maximum total attachment storage per user in KB.
 # Defaults to no limit if not set.
